@@ -1,9 +1,9 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-		controllerName="smax.batch31.A1.controller.Page1"
+controllerName="smax.batch31.A1.controller.Page2"
 		 xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
+	<Page title="Page2">
 		<content>
-	        <Button text="Go to Page2" press="gotoPage2"/>
+	         <Button text="Go Back" press="gotoPage1"/>
 		</content>
 	</Page>
 </core:View>
