@@ -1,9 +1,15 @@
 <core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 		controllerName="smax.batch31.A1.controller.Page1"
 		 xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="Title">
+	<Page title="Product List">
 		<content>
-	        <Button text="Go to Page2" press="gotoPage2"/>
+	       <List items="{/ProductSet}" >
+	         <items>
+	            <StandardListItem title="{ProductID}" description="{Name}" type="Active"
+	            press="gotoPage2"/>
+	           
+	         </items>
+	       </List>
 		</content>
 	</Page>
-</core:View>
+</core:View> 
