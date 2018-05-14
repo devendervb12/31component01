@@ -31,12 +31,17 @@ sap.ui.controller("smax.batch31.A1.controller.Page1", {
 * Called when the Controller is destroyed. Use this one to free resources and finalize activities.
 * @memberOf view.Page1
 */
+	
 //	onExit: function() {
 //
 //	}
 	gotoPage2 : function(oEvent){
 		//debugger;
-		this.getOwnerComponent().getRouter().navTo("page2", {productID : oEvent.getSource().getTitle() });
+		
+			var	pId = oEvent.getSource().getTitle();
+			var	desc = oEvent.getSource().getDescription();
+		
+		this.getOwnerComponent().getRouter().navTo("page2", {productID : pId, name : desc });
 	}
 
 });

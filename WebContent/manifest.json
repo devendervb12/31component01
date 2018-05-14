@@ -4,8 +4,7 @@
       "dataSources" : {
         "smaxProducts" : {
            "uri" : "proxy/http/cloud.mydomain.com:8700/sap/opu/odata/SAP/ZGW_BATCH31_PRODUCT_SRV/"
-        }
-      
+        }     
       }
   },
   "sap.ui5" : {
@@ -27,7 +26,7 @@
 				"name" : "page1",
 				"viewName" : "smax.batch31.A1.view.Page1"				
 			},{
-				"pattern" : "page2pp/{productID}",
+				"pattern" : "page2pp/{productID}/{name}",
 				"name" : "page2",
 				"viewName" : "smax.batch31.A1.view.Page2"
 			}
